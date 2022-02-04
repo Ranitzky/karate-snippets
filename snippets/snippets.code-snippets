@@ -11,13 +11,24 @@
   },
   "delete cookie": {
     "prefix": "kdeleteCookie",
-    "body": ["deleteCookie(\"${1:cookieName}\")"],
+    "body": "deleteCookie(\"${1:cookieName}\")",
     "description": "Delete a cookie by name"
   },
   "driver url": {
     "prefix": "kdriverUrl",
-    "body": ["driver \"${1:url}\""],
+    "body": "driver \"${1:url}\"",
     "description": "Navigates to a new page / address."
+  },
+  "feature": {
+    "prefix": "kfeature",
+    "body": [
+      "Feature: ${1:Feature name}\n",
+      "\tBackground:",
+      "\t\tGiven driver \"${2:baseUrl}\"\n",
+      "\tScenario: ${3:Scenario name}",
+      "\t\tWhen ${4:test case}"
+    ],
+    "description": "Create a new feature with background and scenario."
   },
   "focus": {
     "prefix": "kfocus",
@@ -31,30 +42,22 @@
   },
   "match attribute": {
     "prefix": "kmatchAttribute",
-    "body": [
-      "match attribute(\"${1:locator}\", \"${2:attribute}\") ${3|==,!=,contains|} \"${4:expectedValue}\""
-    ],
+    "body": "match attribute(\"${1:locator}\", \"${2:attribute}\") ${3|==,!=,contains|} \"${4:expectedValue}\"",
     "description": "Validates an element`s attribute has (not) / contains an expected value."
   },
   "match enabled": {
     "prefix": "kmatchEnabled",
-    "body": [
-      "match ${1|enabled,disabled|}(\"${2:locator}\") ${3|==,!=|} ${4|true,false|}"
-    ],
+    "body": "match ${1|enabled,disabled|}(\"${2:locator}\") ${3|==,!=|} ${4|true,false|}",
     "description": "Validates an element is (not) enabled."
   },
   "match text": {
     "prefix": "kmatchText",
-    "body": [
-      "match text(\"${1:locator}\") ${2|==,!=,contains|} \"${3:expectedText}\""
-    ],
+    "body": "match text(\"${1:locator}\") ${2|==,!=,contains|} \"${3:expectedText}\"",
     "description": "Validates an element is (not) equal to/contains expected text."
   },
   "match value": {
     "prefix": "kmatchValue",
-    "body": [
-      "match value(\"${1:locator}\") ${2|==,!=|} \"${3:expectedValue}\""
-    ],
+    "body": "match value(\"${1:locator}\") ${2|==,!=|} \"${3:expectedValue}\"",
     "description": "Validates an element is (not) equal to expected value."
   },
   "match exists": {

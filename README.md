@@ -7,7 +7,7 @@ Helps writing tests easy and fast, as there is no intellisense with Karate.
 
 - Support for most used Karate Core (UI) actions
 
-\!\[feature X\]\(images/feature-x.png\)
+![Demo](images/demo.gif)
 
 ## Snippets
 
@@ -17,6 +17,7 @@ Helps writing tests easy and fast, as there is no intellisense with Karate.
 |              `kclick→` | `click("locator")`                                           |
 |       `kdeleteCookie→` | `deleteCookie("cookieName")`                                 |
 |          `kdriverUrl→` | `driver "url"`                                               |
+|            `kfeature→` | _Snippet for Feature, Background and Scenario_               |
 |              `kfocus→` | `focus("locator")`                                           |
 |              `kinput→` | `input("locator", "string")`                                 |
 |     `kmatchAttribute→` | `match attribute("locator", "attribute") == "expectedValue"` |
