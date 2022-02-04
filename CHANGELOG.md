@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "karate-snippets" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## 0.1 - February, 4th 2022
 
 - Initial release

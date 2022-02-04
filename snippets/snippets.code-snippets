@@ -1,1 +1,125 @@
-{}
+{
+  "clear": {
+    "prefix": "kclear",
+    "body": "clear(\"${1:locator}\")",
+    "description": "Clears an input."
+  },
+  "click": {
+    "prefix": "kclick",
+    "body": "click(\"${1:locator}\")",
+    "description": "Clicks an element."
+  },
+  "delete cookie": {
+    "prefix": "kdeleteCookie",
+    "body": ["deleteCookie(\"${1:cookieName}\")"],
+    "description": "Delete a cookie by name"
+  },
+  "driver url": {
+    "prefix": "kdriverUrl",
+    "body": ["driver \"${1:url}\""],
+    "description": "Navigates to a new page / address."
+  },
+  "focus": {
+    "prefix": "kfocus",
+    "body": "focus(\"${1:locator}\")",
+    "description": "Focusses an element."
+  },
+  "input": {
+    "prefix": "kinput",
+    "body": "input(\"${1:locator}\", \"${2:string}\")",
+    "description": "Fills an input."
+  },
+  "match attribute": {
+    "prefix": "kmatchAttribute",
+    "body": [
+      "match attribute(\"${1:locator}\", \"${2:attribute}\") ${3|==,!=,contains|} \"${4:expectedValue}\""
+    ],
+    "description": "Validates an element`s attribute has (not) / contains an expected value."
+  },
+  "match enabled": {
+    "prefix": "kmatchEnabled",
+    "body": [
+      "match ${1|enabled,disabled|}(\"${2:locator}\") ${3|==,!=|} ${4|true,false|}"
+    ],
+    "description": "Validates an element is (not) enabled."
+  },
+  "match text": {
+    "prefix": "kmatchText",
+    "body": [
+      "match text(\"${1:locator}\") ${2|==,!=,contains|} \"${3:expectedText}\""
+    ],
+    "description": "Validates an element is (not) equal to/contains expected text."
+  },
+  "match value": {
+    "prefix": "kmatchValue",
+    "body": [
+      "match value(\"${1:locator}\") ${2|==,!=|} \"${3:expectedValue}\""
+    ],
+    "description": "Validates an element is (not) equal to expected value."
+  },
+  "match exists": {
+    "prefix": "kmatchExists",
+    "body": "match exists(\"${1:locator}\") == ${2|true,false|}",
+    "description": "Validates an element is (not) present."
+  },
+  "set value": {
+    "prefix": "ksetValue",
+    "body": "value(\"${1:locator}\", \"${2:value}\")",
+    "description": "Sets a value to a given form-element."
+  },
+  "scroll": {
+    "prefix": "kscroll",
+    "body": "scroll(\"${1:locator}\")",
+    "description": "Scrolls to an element."
+  },
+  "scroll and click": {
+    "prefix": "kscrollClick",
+    "body": "scroll(\"${1:locator}\").click()",
+    "description": "Scrolls to an element and clicks."
+  },
+  "scroll and input": {
+    "prefix": "kscrollInput",
+    "body": "scroll(\"${1:locator}\").input(\"${2:text}\")",
+    "description": "Scrolls to an input and type text into it."
+  },
+  "select by label": {
+    "prefix": "kselectLabel",
+    "body": "select(\"${1:locator}\", {}\"${2:label}\")",
+    "description": "Selects by displayed label."
+  },
+  "select by value": {
+    "prefix": "kselectValue",
+    "body": "select(\"${1:locator}\", \"${2:value}\")",
+    "description": "Selects by value."
+  },
+  "select by index": {
+    "prefix": "kselectIndex",
+    "body": "select(\"${1:locator}\", ${2:index})",
+    "description": "Selects by index."
+  },
+  "wait for": {
+    "prefix": "kwaitFor",
+    "body": "waitFor(\"${1:locator}\")",
+    "description": "Waits for a given element is present on page."
+  },
+  "wait for enabled": {
+    "prefix": "kwaitForEnabled",
+    "body": "waitForEnabled(\"${1:locator}\")",
+    "description": "Waits for an given element to be enabled."
+  },
+  "wait for url": {
+    "prefix": "kwaitForUrl",
+    "body": "waitForUrl(\"${1:expectedUrl}\")",
+    "description": "Waits for an expected url."
+  },
+  "wait for text": {
+    "prefix": "kwaitForText",
+    "body": "waitForText(\"${1:locator}\", \"${2:expectedText}\")",
+    "description": "Waits for an expected text in a given locator."
+  },
+  "wait for result count": {
+    "prefix": "kwaitForResultCount",
+    "body": "waitForResultCount(\"${1:locator}\", ${2:amount}))",
+    "description": "Wait for the amount of given elements."
+  }
+}
