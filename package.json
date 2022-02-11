@@ -2,7 +2,8 @@
   "name": "karate-snippets",
   "displayName": "karate-snippets",
   "description": "Snippets for Karate DSL",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "publisher": "ricowilcke",
   "engines": {
     "vscode": "^1.63.0"
   },
