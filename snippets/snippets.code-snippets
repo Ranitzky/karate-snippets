@@ -122,7 +122,7 @@
   },
   "wait for result count": {
     "prefix": "kwaitForResultCount",
-    "body": "waitForResultCount(\"${1:locator}\", ${2:amount}))",
+    "body": "waitForResultCount(\"${1:locator}\", ${2:amount})",
     "description": "Wait for the amount of given elements."
   }
 }
