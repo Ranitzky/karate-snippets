@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.2 - February, 24th 2022
+
+- Logo added
+
 ## 0.1.1 - February, 17th 2022
 
 - fixes waitForResultCount
