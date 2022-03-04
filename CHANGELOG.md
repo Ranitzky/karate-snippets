@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.2.0 - March, 04th 2022
+
+- added print snippet
+- added examples table snippets
+
 ## 0.1.2 - February, 24th 2022
 
 - Logo added

@@ -19,6 +19,38 @@
     "body": "driver \"${1:url}\"",
     "description": "Navigates to a new page / address."
   },
+  "examples 1 Column": {
+    "prefix": "kex1",
+    "body": ["Examples:", "  | ${1:Header 1} |", "  | ${2:Value 1}  |"],
+    "description": "Inserts a 1 column examples table."
+  },
+  "examples 2 Columns": {
+    "prefix": "kex2",
+    "body": [
+      "Examples:",
+      "  | ${1:Header 1} | ${2:Header 2} |",
+      "  | ${3:Value 1}  | ${4:Value 2}  |"
+    ],
+    "description": "Inserts a 2 column examples table."
+  },
+  "examples 3 Columns": {
+    "prefix": "kex3",
+    "body": [
+      "Examples:",
+      "  | ${1:Header 1} | ${2:Header 2} | ${3:Header 3} |",
+      "  | ${4:Value 1}  | ${5:Value 2}  | ${6:Value 3}  |"
+    ],
+    "description": "Inserts a 3 column examples table."
+  },
+  "examples 4 Columns": {
+    "prefix": "kex4",
+    "body": [
+      "Examples:",
+      "  | ${1:Header 1} | ${2:Header 2} | ${3:Header 3} | ${4:Header 4} |",
+      "  | ${5:Value 1}  | ${6:Value 2}  | ${7:Value 3}  | ${8:Value 4}  |"
+    ],
+    "description": "Inserts a 4 column examples table."
+  },
   "feature": {
     "prefix": "kfeature",
     "body": [
@@ -39,6 +71,15 @@
     "prefix": "kinput",
     "body": "input(\"${1:locator}\", \"${2:string}\")",
     "description": "Fills an input."
+  },
+  "logger": {
+    "prefix": "klog",
+    "body": [
+      "* print \"===========\"",
+      "* print \"${1:key}:\" ${1:key}",
+      "* print \"===========\""
+    ],
+    "description": "Logs a variable to console."
   },
   "match attribute": {
     "prefix": "kmatchAttribute",

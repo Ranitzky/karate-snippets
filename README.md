@@ -17,10 +17,15 @@ Helps writing tests easy and fast, as there is no intellisense with Karate.
 |              `kclick→` | `click("locator")`                                           |
 |       `kdeleteCookie→` | `deleteCookie("cookieName")`                                 |
 |          `kdriverUrl→` | `driver "url"`                                               |
-|            `kfeature→` | _Snippet for Feature, Background and Scenario_               |
+|                `kex1→` | _Examples Table - 1 Column_                                  |
+|                `kex2→` | _Examples Table - 2 Column_                                  |
+|                `kex3→` | _Examples Table - 3 Column_                                  |
+|                `kex4→` | _Examples Table - 4 Column_                                  |
+|            `kfeature→` | _Feature, Background and Scenario_                           |
 |              `kfocus→` | `focus("locator")`                                           |
 |              `kinput→` | `input("locator", "string")`                                 |
 |     `kmatchAttribute→` | `match attribute("locator", "attribute") == "expectedValue"` |
+|                `klog→` | `* print "variable:" variable`                               |
 |       `kmatchEnabled→` | `match enabled("locator") == true`                           |
 |          `kmatchText→` | `match text("locator") contains "expectedText"`              |
 |         `kmatchValue→` | `match value("locator") == "expectedValue"`                  |
