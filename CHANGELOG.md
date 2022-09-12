@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2 - September, 12th 2022
+
+- fixes 'match enabled' snippet
+
 ## 0.2.1 - March, 07th 2022
 
 - fixes print snippet

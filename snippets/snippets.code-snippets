@@ -88,7 +88,7 @@
   },
   "match enabled": {
     "prefix": "kmatchEnabled",
-    "body": "match ${1|enabled,disabled|}(\"${2:locator}\") ${3|==,!=|} ${4|true,false|}",
+    "body": "match enabled(\"${1:locator}\") ${2|==,!=|} ${3|true,false|}",
     "description": "Validates an element is (not) enabled."
   },
   "match text": {
