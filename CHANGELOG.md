@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.3 - November, 15th 2024
+
+ - new Logo added
+
 ## 0.2.2 - September, 12th 2022
 
 - fixes 'match enabled' snippet
