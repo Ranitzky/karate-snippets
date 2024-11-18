@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.4 - November, 18th 2024
+
+  - smaller Logo
+
 ## 0.2.3 - November, 15th 2024
 
  - new Logo added
